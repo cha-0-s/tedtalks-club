@@ -1,1 +1,14 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Nicosia</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23e62b1e%27/%3E%3C/svg%3E"><style>html,body{height:100%;margin:0;background:#0b0b12;color:#fff;font:18px "Helvetica Neue",Helvetica,Arial,sans-serif}body{display:grid;place-items:center}i{width:22px;height:22px;border-radius:50%;background:#e62b1e;display:block;margin:0 auto 20px}div{text-align:center}</style></head><body><div><i></i></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Coming soon</title><meta name="theme-color" content="#0b0b12"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23e62b1e%27/%3E%3C/svg%3E"><style>
+html,body{height:100%;margin:0;background:#0b0b12;color:#fff}
+body{display:grid;align-items:center;padding:0 clamp(24px,8vw,140px);box-sizing:border-box;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1{margin:0;font-size:clamp(32px,4.3vw,84px);line-height:1.2;letter-spacing:-.035em;font-weight:700}h1>span{display:block}
+.c{position:relative}.c::after{content:"";position:absolute;left:.08em;top:.12em;width:.09em;height:.95em;background:#e62b1e;animation:b 1.06s steps(1) infinite}
+.busy .c::after{animation:none}.r{visibility:hidden}@keyframes b{50%{opacity:0}}
+@media(prefers-reduced-motion:reduce){.c::after{animation:none}}</style></head><body>
+<h1 aria-label="Young ideas from Cyprus to the world. Great education. Strong community. Coming soon..."><span aria-hidden="true">Young ideas from Cyprus to the world.</span><span aria-hidden="true">Great education. Strong community.</span><span aria-hidden="true">Coming soon...</span></h1>
+<script>(function(){var h=document.querySelector("h1"),c=document.createElement("i"),i=0,j=0,R;c.className="c";
+if(matchMedia("(prefers-reduced-motion:reduce)").matches){h.lastChild.appendChild(c);return}
+R=[].map.call(h.children,function(s){var t=s.textContent,a=document.createElement("span"),r=document.createElement("span");r.className="r";r.textContent=t;s.textContent="";s.append(a,r);return{t:t,a:a,r:r}});
+R[0].a.after(c);
+function go(){var l=R[i];if(j<l.t.length){h.classList.add("busy");j++;l.a.textContent=l.t.slice(0,j);l.r.textContent=l.t.slice(j);setTimeout(go,l.t[j-1]=="."?260:45+Math.random()*65)}else{h.classList.remove("busy");if(++i<R.length){j=0;setTimeout(function(){R[i].a.after(c);go()},550)}}}
+setTimeout(go,900)})()</script></body></html>
