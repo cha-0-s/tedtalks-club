@@ -118,6 +118,32 @@ p{text-wrap:pretty}
 .logos li{display:grid;place-items:center;min-height:140px;padding:24px;border:1px solid var(--line);border-radius:6px;font-weight:700;font-size:20px;text-align:center}
 .logos img{max-height:72px}
 
+.logos li{padding:0}.logos a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;width:100%;height:100%;min-height:160px;padding:26px 20px;background:#fff;color:var(--ink);border-radius:6px;text-decoration:none}
+.logos a:hover{background:#f6f6f8}
+.logos img{height:44px;max-height:44px;width:auto;max-width:78%;object-fit:contain}
+.logos span{font-size:14px;font-weight:400;color:var(--mute)}
+.two .logos{grid-template-columns:1fr 1fr}
+.sponsor{background:var(--ink);color:#fff;padding:clamp(80px,10vw,140px) 0}
+.sponsor .kick{color:#b9b9c6;font-size:16px;margin-bottom:14px}
+.sponsor .logos{margin-top:18px}.sponsor .logos li{border:0}
+.sponsor .pl{font-size:15px;font-weight:400;color:#b9b9c6;margin-top:clamp(48px,6vw,88px)}
+.sponsor .note{margin-top:18px;font-size:14px;color:#b9b9c6}
+.pitch{margin-top:32px;max-width:52ch;font-size:clamp(18px,1.6vw,22px)}.pitch p+p{margin-top:16px}
+.sponsor .act,.why .act,.head .act{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:38px;font-size:16px}
+.why{background:var(--red);color:#fff;padding:clamp(72px,9vw,128px) 0;margin-bottom:clamp(72px,9vw,128px)}
+.why .big{max-width:18ch}
+.why .units article{border-color:rgba(255,255,255,.6)}.why .units article::before{background:#fff}
+.why .units h3{font-size:clamp(24px,2.3vw,32px);margin:0 0 12px}.why .units p{color:#fff}
+.why+.sec{padding-top:0}
+dialog{width:min(640px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;border:0;border-radius:8px;background:var(--ink);color:#fff;padding:clamp(22px,4vw,40px)}
+dialog::backdrop{background:rgba(11,11,18,.78)}
+.pdtop{display:flex;justify-content:space-between;align-items:start;gap:20px}
+.pdtop h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em;line-height:1.05}
+dialog .x{background:none;border:0;color:#fff;font:700 16px var(--sans);padding:8px 0;cursor:pointer;text-decoration:underline;text-underline-offset:.22em}
+dialog>p{margin:12px 0 22px;color:#dedee6}
+dialog iframe{display:block;width:100%;border:0;min-height:480px}
+:root:has(dialog[open]){overflow:hidden}
+
 /* Team */
 .photo{margin:0}.photo img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;object-position:100% 0}
 figcaption,.credit{font-size:13px;color:var(--mute);margin-top:10px}
