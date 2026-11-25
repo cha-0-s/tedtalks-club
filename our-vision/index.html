@@ -20,6 +20,10 @@ h1,h2,h3{font-weight:700;text-wrap:balance}p{text-wrap:pretty}
 .open i{position:absolute;right:calc(var(--pad) * 1.2);top:17vh;width:clamp(64px,13vw,210px);aspect-ratio:1;border-radius:50%;background:var(--red);animation:wake 1.5s cubic-bezier(.2,.8,.2,1) .25s both}
 @keyframes wake{from{transform:scale(.06)}}
 
+/* Statement */
+.say{display:grid;grid-template-columns:1fr 1fr;gap:32px clamp(40px,6vw,96px);margin-top:clamp(40px,5vw,76px);font-size:clamp(19px,1.6vw,23px);line-height:1.45}
+.say p{max-width:40ch}
+
 /* Four words */
 .way{position:relative;height:340vh;background:var(--ink);color:#fff}
 .way .stick{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;overflow:hidden}
@@ -70,10 +74,14 @@ h1,h2,h3{font-weight:700;text-wrap:balance}p{text-wrap:pretty}
 .after{margin-top:clamp(40px,5vw,72px);font-size:20px;max-width:52ch}
 
 /* Real */
-.real dl{margin-top:clamp(44px,5vw,80px);border-bottom:1px solid rgba(255,255,255,.3)}
-.real dl>div{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:10px 40px;align-items:baseline;border-top:1px solid rgba(255,255,255,.3);padding:clamp(20px,2.4vw,34px) 0}
+.real dl{position:relative;margin-top:clamp(44px,5vw,80px);border-bottom:1px solid rgba(255,255,255,.3)}
+.real dl>div{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:10px 40px;align-items:baseline;border-top:1px solid rgba(255,255,255,.3);padding:clamp(30px,4.2vw,62px) 0}
 .real dt{font-size:clamp(32px,4.4vw,66px);font-weight:700;letter-spacing:-.04em;line-height:1.04}
 .real dd{font-size:20px;color:var(--soft);max-width:44ch}
+.real .r,.real .go{color:var(--red)}.real .r{display:inline-block}
+.real .run .r{opacity:0}.real .run dt,.real .run dd{transition:color .45s}.real .run dt{color:#85858f}.real .run dd{color:#a2a2ad}
+.real .run .on dt{color:#fff}.real .run .on dd{color:#fff}
+.real .go{position:absolute;left:0;top:0;font-size:clamp(32px,4.4vw,66px);font-weight:700;letter-spacing:-.04em;line-height:1.04;pointer-events:none;will-change:transform;transition:transform .6s cubic-bezier(.65,0,.15,1)}
 
 .last{padding:clamp(100px,14vw,210px) 0}
 .last h2{font-size:clamp(44px,8vw,128px);line-height:.95;letter-spacing:-.045em;max-width:12ch}
@@ -86,14 +94,17 @@ footer{background:var(--ink);color:#b9b9c6;font-size:14px;padding:36px 0 44px}fo
  .way li b{font-size:clamp(38px,min(12.5vw,8.5vh),84px)}
  .way svg{right:-62vw;width:124vw;opacity:.4}
  .way{height:300vh}.map .grid{margin-top:96px}.map svg{width:88%}
- .lines,.three,.map .grid,.real dl>div{grid-template-columns:minmax(0,1fr)}.three{gap:40px}
+ .say,.lines,.three,.map .grid,.real dl>div{grid-template-columns:minmax(0,1fr)}.three{gap:40px}
+ .real dt,.real .go{font-size:min(10vw,48px)}
  .ring4{grid-template-columns:1fr}.core{order:-1;position:static;margin:0 0 28px;width:210px;height:210px;font-size:23px}
  .ring4 li,.ring4 li:nth-child(n){padding:22px 0;min-height:0;border:0;border-top:1px solid var(--line);display:block}
 }
-@media(prefers-reduced-motion:reduce){.open i,.map .arc{animation:none}}
+@media(prefers-reduced-motion:reduce){.open i,.map .arc{animation:none}.real .go{transition:none}}
 </style></head><body>
 <main>
 <section class="open"><i aria-hidden="true"></i><div class="wrap"><h1>Some of the best ideas in Cyprus are still at school</h1><p>We are building a platform for the young people who have them. A place to be heard, find support and change things, in Cyprus and around the world.</p></div></section>
+
+<section class="sec stmt"><div class="wrap"><h2 class="big">If there’s one thing we need right now, it’s new ideas.</h2><div class="say"><p>While ideas usually begin with the individual, they grow best in conversation. Thinking needs its community. It needs disagreement, permission to fail. It needs space and lots of it, especially at a time when so many of those traditional spaces and the values underpinning them are hollowing out.</p><p>Our mission is to build a new space, a new community where this thinking can, hopefully, flourish: where difficult, controversial and deeply personal questions can be asked openly, collectively, from all angles, and most importantly, carried through into what actually gets built.</p></div></div></section>
 
 <section class="way" id="way"><div class="stick"><svg viewBox="0 0 400 400" aria-hidden="true"><circle class="ring" cx="200" cy="200" r="60"/><circle class="ring" cx="200" cy="200" r="104"/><circle class="ring" cx="200" cy="200" r="150"/><circle class="ring" cx="200" cy="200" r="197"/><circle class="dot" cx="200" cy="200" r="14"/></svg>
 <div class="wrap"><p class="lead">We want every young idea to get a fair chance to be</p>
@@ -127,11 +138,11 @@ footer{background:var(--ink);color:#b9b9c6;font-size:14px;padding:36px 0 44px}fo
 <li><h3>Funds</h3><p>They help the strongest ideas take their first step.</p></li></ul><div class="core">Young people with ideas</div></div>
 <p class="after">While we build the rest, we will bring them together, from Cyprus and from around the world.</p></div></section>
 
-<section class="sec dark real"><div class="wrap"><h2 class="big">Where ideas meet the real world</h2>
-<dl><div><dt>Real projects</dt><dd>Young people try themselves in work that matters to someone.</dd></div>
-<div><dt>Real counterparts</dt><dd>They deal with professionals who ask hard questions and expect an answer.</dd></div>
-<div><dt>Real stages</dt><dd>They speak to audiences who came to hear them.</dd></div>
-<div><dt>Real places</dt><dd>They travel and visit the offices of companies, governments and non-profits, to see how an idea becomes a product, a law or a better life for someone.</dd></div></dl></div></section>
+<section class="sec dark real"><div class="wrap"><h2 class="big">Where ideas meet the world</h2>
+<dl id="real"><div><dt><span class="r">Real</span> projects</dt><dd>Young people try themselves in work that matters to someone.</dd></div>
+<div><dt><span class="r">Real</span> counterparts</dt><dd>They deal with professionals who ask hard questions and expect an answer.</dd></div>
+<div><dt><span class="r">Real</span> stages</dt><dd>They speak to audiences who came to hear them.</dd></div>
+<div><dt><span class="r">Real</span> places</dt><dd>They travel and visit the offices of companies, governments and non-profits, to see how an idea becomes a product, a law or a better life for someone.</dd></div></dl></div></section>
 
 <section class="last red"><div class="wrap"><h2>Give young people the floor</h2><p>They will live with the future the longest. We want them to help shape it now, starting in Cyprus.</p></div></section>
 </main>
@@ -141,4 +152,11 @@ w.classList.add("run");var L=w.querySelectorAll("li"),C=w.querySelectorAll(".rin
 function run(){t=false;var r=w.getBoundingClientRect(),p=-r.top/(r.height-innerHeight),n=r.top>innerHeight*.5?-1:Math.min(3,Math.max(0,Math.floor(p*4.4)));
 for(var k=0;k<4;k++){L[k].classList.toggle("on",k<=n);C[k].classList.toggle("on",k<=n)}}
 addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(run)}},{passive:true});addEventListener("resize",run);run()})()</script>
+<script>(function(){var d=document.getElementById("real"),R=[].slice.call(d.children),S=R.map(function(x){return x.querySelector(".r")}),g=document.createElement("span"),t=false,a=-1;
+g.className="go";g.textContent="Real";g.setAttribute("aria-hidden","true");d.classList.add("run");
+function put(n,snap){if(n==a&&!snap)return;a=n;var y=S[n].getBoundingClientRect().top-d.getBoundingClientRect().top-g.offsetTop;
+if(snap){g.style.transition="none"}g.style.transform="translateY("+y+"px)";if(snap){g.offsetWidth;g.style.transition=""}R.forEach(function(x,k){x.classList.toggle("on",k==n)})}
+function run(){t=false;var n=0,m=innerHeight*.65;S.forEach(function(x,k){var b=x.getBoundingClientRect();if((b.top+b.bottom)/2<m)n=k});put(n)}
+d.appendChild(g);put(0,true);run();addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(run)}},{passive:true});
+addEventListener("resize",function(){put(Math.max(a,0),true);run()});if(document.fonts)document.fonts.ready.then(function(){put(Math.max(a,0),true)})})()</script>
 </body></html>
