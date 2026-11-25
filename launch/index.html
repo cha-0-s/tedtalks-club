@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23e62b1e%27/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css">
+<title>TED-Ed Student Talks, The Falcon School Nicosia</title>
+<meta name="description" content="TED-Ed Student Talks, hosted by The Falcon School Nicosia. Coming soon.">
+</head><body class="home">
+<main>
+<img class="cyprus" src="../assets/cyprus.svg" alt="" aria-hidden="true">
+<h1 class="lockup"><img src="../assets/ted-ed-student-talks.svg" alt="TED-Ed Student Talks" width="1590" height="146"></h1>
+<p class="host"><img src="../assets/falcon-crest-white.png" alt="" width="68" height="68"><span>hosted by<br><b>The Falcon School Nicosia</b></span></p>
+<p class="soon">Coming soon</p>
+<section class="notify" aria-label="Notify me about the launch">
+<div id="form"></div>
+</section>
+</main>
+<footer><a href="privacy/">Privacy Policy</a><a href="about/">About</a><p class="credit">Photo: Slava Zamyslov, TEDxSadovoeRing 2017</p></footer>
+<script>
+/* Set live to true once the Tally form is published. Until then a local preview is shown and nothing is sent. */
+var TALLY={id:"4aKl2r",live:true};
+var box=document.getElementById("form");
+if(TALLY.live){
+  box.innerHTML='<iframe title="Notify me about the launch" data-tally-src="https://tally.so/embed/'+TALLY.id+'?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" height="230"></iframe>';
+  var s=document.createElement("script");s.src="https://tally.so/widgets/embed.js";s.onload=function(){Tally.loadEmbeds()};document.body.appendChild(s);
+}else{
+  box.innerHTML='<form><input type="email" required aria-label="Your email" placeholder="you@example.com" autocomplete="email">'+
+  '<label class="consent"><input type="checkbox" required><span>I am 14 or older, or a parent is signing me up. Email me when TED‑Ed Student Talks launches. I can unsubscribe at any time.</span></label>'+
+  '<button>Notify me</button><p class="note">Local preview. Nothing is sent.</p></form>';
+  box.firstChild.addEventListener("submit",function(e){e.preventDefault();box.innerHTML='<p class="done" role="status">Thank you. We will email you when applications open.</p>'});
+}
+</script>
+</body></html>
