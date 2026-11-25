@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Our vision: young ideas from Cyprus</title><meta name="description" content="We are building a platform where young people in Cyprus make their ideas heard, find support and turn them into change.">
+<meta property="og:title" content="Some of the best ideas in Cyprus are still at school"><meta property="og:description" content="We are building a platform where young people in Cyprus make their ideas heard, find support and turn them into change."><meta property="og:type" content="website"><meta name="theme-color" content="#0b0b12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23e62b1e%27/%3E%3C/svg%3E"><style>
+:root{--red:#e62b1e;--ink:#0b0b12;--mute:#565661;--line:#dcdce2;--soft:#dedee6;--pad:clamp(20px,5vw,80px)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font:18px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul,ol,dl,dd,blockquote{margin:0;padding:0}ul,ol{list-style:none}
+h1,h2,h3{font-weight:700;text-wrap:balance}p{text-wrap:pretty}
+.wrap{max-width:calc(1280px + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
+.big{font-size:clamp(36px,5.4vw,80px);line-height:1;letter-spacing:-.04em;max-width:17ch}
+.sec{padding:clamp(84px,10vw,150px) 0}.dark{background:var(--ink);color:#fff}
+
+/* Opening */
+.open{position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;background:var(--ink);color:#fff}
+.open .wrap{position:relative;width:100%;padding-top:120px;padding-bottom:clamp(44px,8vh,90px)}
+.open h1{font-size:clamp(46px,9.4vw,150px);line-height:.94;letter-spacing:-.045em;max-width:10.5ch}
+.open p{margin-top:clamp(28px,4vh,44px);max-width:44ch;font-size:clamp(19px,1.7vw,24px);line-height:1.4}
+.open i{position:absolute;right:calc(var(--pad) * 1.2);top:17vh;width:clamp(64px,13vw,210px);aspect-ratio:1;border-radius:50%;background:var(--red);animation:wake 1.5s cubic-bezier(.2,.8,.2,1) .25s both}
+@keyframes wake{from{transform:scale(.06)}}
+
+/* Four words */
+.way{position:relative;height:340vh;background:var(--ink);color:#fff}
+.way .stick{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;overflow:hidden}
+.way .wrap{position:relative;width:100%}
+.way .lead{font-size:clamp(19px,1.7vw,24px);color:var(--soft);margin-bottom:clamp(24px,4vh,48px)}
+.way li{transition:opacity .35s}.way li+li{margin-top:clamp(12px,2.2vh,24px)}
+.way li b{display:block;font-size:clamp(42px,min(8vw,11.5vh),124px);line-height:1;letter-spacing:-.045em}
+.way li span{display:block;text-wrap:balance;margin-top:4px;font-size:clamp(17px,1.5vw,21px);line-height:1.4}
+.way.run li{opacity:.28}.way.run li.on{opacity:1}
+.way svg{position:absolute;right:calc(var(--pad) * .4);top:50%;width:min(50vw,88vh);height:auto;transform:translateY(-50%);pointer-events:none}
+.way circle{fill:none;stroke:var(--red);stroke-width:1.5;transform-origin:200px 200px;transition:transform .9s cubic-bezier(.2,.7,.2,1),opacity .9s;opacity:.55}
+.way circle.dot{fill:var(--red);stroke:none;opacity:1}
+.way.run circle.ring{transform:scale(.06);opacity:0}.way.run circle.ring.on{transform:none;opacity:.55}
+
+/* Two lines */
+.lines{display:grid;grid-template-columns:1fr 1fr;gap:56px clamp(40px,6vw,96px);margin-top:clamp(48px,6vw,90px)}
+.lines blockquote{font-size:clamp(34px,4.3vw,64px);font-weight:700;letter-spacing:-.04em;line-height:1.02;color:var(--red);max-width:9ch}
+.lines p{margin-top:24px;max-width:40ch;font-size:20px}
+.lines+p{margin-top:clamp(48px,6vw,84px);padding-top:26px;border-top:1px solid var(--line);font-size:clamp(22px,2.3vw,32px);font-weight:700;letter-spacing:-.02em;line-height:1.25;max-width:34ch}
+
+/* Skills */
+.red{background:var(--red);color:#fff}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(28px,4vw,64px);margin-top:clamp(48px,6vw,90px)}
+.three li{border-top:2px solid #fff;padding-top:20px}
+.three h3{font-size:clamp(28px,3vw,42px);letter-spacing:-.03em;line-height:1.08;margin-bottom:14px}
+.three p{max-width:34ch}
+
+/* Map */
+.map{overflow:hidden}
+.map .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:56px clamp(40px,5vw,80px);align-items:center;margin-top:clamp(48px,6vw,90px)}
+.map svg{width:100%;height:auto;overflow:visible}
+.map .arc{fill:none;stroke:var(--red);stroke-width:4;stroke-linecap:round;stroke-dasharray:2 16;animation:go 1.6s linear infinite}
+@keyframes go{to{stroke-dashoffset:-72}}
+.map li{border-top:1px solid rgba(255,255,255,.3);padding:22px 0}
+.map li h3{font-size:clamp(24px,2.3vw,32px);letter-spacing:-.025em;line-height:1.12;margin-bottom:6px}
+.map li p{color:var(--soft);max-width:46ch}
+
+/* Community */
+.ring4{position:relative;display:grid;grid-template-columns:1fr 1fr;margin-top:clamp(48px,6vw,90px)}
+.ring4 li{padding:clamp(32px,3.4vw,52px);min-height:270px}
+.ring4 li:nth-child(odd){padding-left:0;padding-right:200px;border-right:1px solid var(--line)}
+.ring4 li:nth-child(even){padding-right:0;padding-left:200px}
+.ring4 li:nth-child(-n+2){border-bottom:1px solid var(--line);padding-top:0}
+.ring4 li:nth-child(n+3){display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:0}
+.ring4 h3{font-size:clamp(24px,2.5vw,34px);letter-spacing:-.025em;line-height:1.1;margin-bottom:8px}
+.ring4 p{color:#3c3c47;max-width:32ch}
+.core{position:absolute;left:50%;top:50%;width:280px;height:280px;margin:-140px 0 0 -140px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-size:29px;font-weight:700;letter-spacing:-.025em;line-height:1.1;padding:28px}
+.after{margin-top:clamp(40px,5vw,72px);font-size:20px;max-width:52ch}
+
+/* Real */
+.real dl{margin-top:clamp(44px,5vw,80px);border-bottom:1px solid rgba(255,255,255,.3)}
+.real dl>div{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:10px 40px;align-items:baseline;border-top:1px solid rgba(255,255,255,.3);padding:clamp(20px,2.4vw,34px) 0}
+.real dt{font-size:clamp(32px,4.4vw,66px);font-weight:700;letter-spacing:-.04em;line-height:1.04}
+.real dd{font-size:20px;color:var(--soft);max-width:44ch}
+
+.last{padding:clamp(100px,14vw,210px) 0}
+.last h2{font-size:clamp(44px,8vw,128px);line-height:.95;letter-spacing:-.045em;max-width:12ch}
+.last p{margin-top:32px;max-width:42ch;font-size:clamp(19px,1.7vw,24px);line-height:1.4}
+footer{background:var(--ink);color:#b9b9c6;font-size:14px;padding:36px 0 44px}footer p{max-width:84ch}
+
+@media(max-width:860px){
+ body{font-size:17px}
+ .open i{top:13vh;right:var(--pad)}
+ .way li b{font-size:clamp(38px,min(12.5vw,8.5vh),84px)}
+ .way svg{right:-62vw;width:124vw;opacity:.4}
+ .way{height:300vh}.map .grid{margin-top:96px}.map svg{width:88%}
+ .lines,.three,.map .grid,.real dl>div{grid-template-columns:minmax(0,1fr)}.three{gap:40px}
+ .ring4{grid-template-columns:1fr}.core{order:-1;position:static;margin:0 0 28px;width:210px;height:210px;font-size:23px}
+ .ring4 li,.ring4 li:nth-child(n){padding:22px 0;min-height:0;border:0;border-top:1px solid var(--line);display:block}
+}
+@media(prefers-reduced-motion:reduce){.open i,.map .arc{animation:none}}
+</style></head><body>
+<main>
+<section class="open"><i aria-hidden="true"></i><div class="wrap"><h1>Some of the best ideas in Cyprus are still at school</h1><p>We are building a platform for the young people who have them. A place to be heard, find support and change things, in Cyprus and around the world.</p></div></section>
+
+<section class="way" id="way"><div class="stick"><svg viewBox="0 0 400 400" aria-hidden="true"><circle class="ring" cx="200" cy="200" r="60"/><circle class="ring" cx="200" cy="200" r="104"/><circle class="ring" cx="200" cy="200" r="150"/><circle class="ring" cx="200" cy="200" r="197"/><circle class="dot" cx="200" cy="200" r="14"/></svg>
+<div class="wrap"><p class="lead">We want every young idea to get a fair chance to be</p>
+<ol><li><b>heard</b><span>A stage, and people who came to listen.</span></li>
+<li><b>noticed</b><span>The attention of people who can help.</span></li>
+<li><b>funded</b><span>Money to try it for the first time.</span></li>
+<li><b>made real</b><span>A way to act on it, and a change people can see.</span></li></ol></div></div></section>
+
+<section class="sec"><div class="wrap"><h2 class="big">Two lines we believe in</h2>
+<div class="lines"><div><blockquote>Ideas worth spreading</blockquote><p>TED's line for about twenty years. It asks whether an idea is true, clear and useful enough to deserve someone's time.</p></div>
+<div><blockquote>Ideas change everything</blockquote><p>TED's line today. It says what can happen next, when someone hears an idea and acts on it.</p></div></div>
+<p>The first line teaches you to think. The second asks you to do something about it. Young people need both.</p></div></section>
+
+<section class="sec red"><div class="wrap"><h2 class="big">It starts with three skills</h2>
+<ol class="three"><li><h3>Find an idea</h3><p>Notice what others walk past. Ask better questions. Turn a feeling that something is wrong into an idea of your own.</p></li>
+<li><h3>Think it through</h3><p>Check the facts. Look for the best argument against you. Change your mind when you should.</p></li>
+<li><h3>Make people care</h3><p>Tell it clearly and honestly, so that a room of strangers understands and wants to help.</p></li></ol></div></section>
+
+<section class="sec dark map"><div class="wrap"><h2 class="big">What we will build</h2>
+<div class="grid"><svg viewBox="-8 -8 1016 608" role="img" aria-label="Map of Cyprus with paths leading from Nicosia out to the world"><path d="M979.2 7.2L993.9 1.2L1000.0 0.0L997.7 1.7L996.2 3.7L995.2 5.7L994.1 7.2L992.6 22.0L991.5 25.5L988.3 26.7L978.4 28.8L976.2 30.5L934.9 57.0L896.5 90.2L804.0 145.8L791.7 156.8L781.5 169.6L774.1 186.6L770.1 193.7L763.6 198.4L753.2 198.9L742.5 196.3L732.3 195.2L723.9 200.4L711.8 217.7L706.8 227.5L704.8 236.5L701.6 277.8L707.5 282.1L724.7 299.8L728.3 305.1L730.4 311.7L735.5 318.4L750.0 330.8L754.2 334.4L760.2 339.6L766.7 347.0L771.5 361.4L776.3 370.7L782.2 379.2L787.4 382.8L781.4 383.2L770.3 382.0L759.6 378.9L754.8 373.6L749.7 370.9L726.3 373.9L706.0 380.1L701.6 382.8L698.1 386.5L694.6 391.2L690.6 395.4L685.4 397.1L678.9 394.7L667.0 383.0L660.3 378.9L650.7 377.0L650.3 376.9L641.5 375.1L622.9 376.1L616.1 378.7L606.9 382.2L595.6 393.5L592.4 400.3L589.5 408.8L587.3 418.3L586.5 427.7L587.4 437.8L586.4 442.1L582.3 443.9L579.6 445.9L576.7 455.3L574.8 458.3L568.1 460.2L553.8 460.4L548.3 461.9L544.5 465.8L540.1 471.9L534.9 477.4L529.0 479.9L515.3 483.3L502.8 489.4L492.7 491.6L486.2 483.8L485.8 498.6L473.6 506.2L441.6 512.9L435.1 515.9L431.2 518.6L425.9 522.2L419.6 523.4L388.6 519.7L357.7 523.4L351.0 525.2L344.9 529.4L325.0 548.1L320.5 557.0L318.1 562.0L317.7 576.5L326.8 588.4L326.8 591.7L288.3 591.7L288.3 588.4L290.0 578.4L277.5 554.3L276.6 545.2L252.4 538.7L242.4 537.7L233.2 538.9L210.7 547.1L205.7 548.8L187.7 551.2L169.8 547.6L152.7 540.1L130.7 526.2L122.8 522.8L113.8 520.6L95.5 518.6L87.9 515.5L80.7 510.9L63.5 497.2L61.0 494.3L58.3 479.0L56.6 476.6L56.3 471.6L46.3 443.9L41.4 439.7L32.3 433.6L28.4 429.5L24.9 424.2L22.3 417.9L22.0 411.1L25.7 404.3L17.4 390.6L16.6 385.1L16.6 373.6L14.7 363.7L5.4 347.4L1.9 339.3L0.0 326.1L1.5 316.5L6.4 313.3L15.1 319.3L28.0 333.5L35.2 339.2L43.3 342.6L61.2 341.8L76.8 333.4L89.6 320.7L99.2 306.9L105.6 290.6L110.2 281.7L117.1 276.7L117.9 274.3L119.1 271.8L121.6 270.7L123.7 271.3L127.0 273.5L127.7 274.0L130.5 274.6L134.9 273.6L142.3 270.4L149.8 267.1L159.0 265.9L163.2 265.4L167.2 265.9L180.9 267.7L189.5 268.8L204.1 270.7L217.4 274.5L228.2 281.7L239.8 286.2L255.7 281.8L267.5 272.2L277.1 258.7L283.4 241.7L285.7 221.9L286.2 187.1L284.6 171.5L279.5 154.9L289.8 156.7L307.5 167.2L316.4 169.6L343.9 175.5L374.2 173.7L426.9 180.4L434.7 184.1L498.0 191.2L598.3 175.2L633.9 154.9L651.4 145.0L673.4 148.5L696.4 141.2L760.0 116.2L777.6 104.1L801.2 95.1L823.0 72.6L835.3 69.9L860.1 63.0L882.4 55.7L900.4 44.1Z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+<path class="arc" d="M471 275Q330 -60 -60 -120"/><path class="arc" d="M471 275Q520 -40 820 -190"/><path class="arc" d="M471 275Q250 330 -120 250"/><path class="arc" d="M471 275Q430 560 120 720"/><path class="arc" d="M471 275Q700 420 800 740"/><circle cx="471" cy="275" r="19" fill="#e62b1e"/></svg>
+<ol><li><h3>An educational platform</h3><p>Where young people learn to find ideas, test them and present them.</p></li>
+<li><h3>A national stage</h3><p>Events that bring the ideas of young people from across the island in front of the whole country.</p></li>
+<li><h3>Cyprus branches of international competitions</h3><p>So that a student here can enter the same contests as students anywhere else.</p></li>
+<li><h3>A road out into the world</h3><p>The best ideas go on to international events and competitions.</p></li></ol></div></div></section>
+
+<section class="sec"><div class="wrap"><h2 class="big">And a community around every idea</h2>
+<div class="ring4"><ul style="display:contents"><li><h3>Businesses</h3><p>They bring real problems, real projects and people who know how things get made.</p></li>
+<li><h3>Government</h3><p>Public organisations show how decisions are taken, and where a young voice can change one.</p></li>
+<li><h3>Non-profits</h3><p>They know what their communities need, and what it takes to keep going.</p></li>
+<li><h3>Funds</h3><p>They help the strongest ideas take their first step.</p></li></ul><div class="core">Young people with ideas</div></div>
+<p class="after">While we build the rest, we will bring them together, from Cyprus and from around the world.</p></div></section>
+
+<section class="sec dark real"><div class="wrap"><h2 class="big">Where ideas meet the real world</h2>
+<dl><div><dt>Real projects</dt><dd>Young people try themselves in work that matters to someone.</dd></div>
+<div><dt>Real counterparts</dt><dd>They deal with professionals who ask hard questions and expect an answer.</dd></div>
+<div><dt>Real stages</dt><dd>They speak to audiences who came to hear them.</dd></div>
+<div><dt>Real places</dt><dd>They travel and visit the offices of companies, governments and non-profits, to see how an idea becomes a product, a law or a better life for someone.</dd></div></dl></div></section>
+
+<section class="last red"><div class="wrap"><h2>Give young people the floor</h2><p>They will live with the future the longest. We want them to help shape it now, starting in Cyprus.</p></div></section>
+</main>
+<footer><div class="wrap"><p>A local, non-profit initiative in Nicosia, Cyprus. It is not run or endorsed by TED. "Ideas worth spreading" and "Ideas change everything" are TED's lines. TED, TED-Ed and TEDx are trademarks of TED Conferences, LLC.</p></div></footer>
+<script>(function(){var w=document.getElementById("way");if(matchMedia("(prefers-reduced-motion:reduce)").matches){w.style.height="auto";w.querySelector(".stick").style.position="relative";return}
+w.classList.add("run");var L=w.querySelectorAll("li"),C=w.querySelectorAll(".ring"),t=false;
+function run(){t=false;var r=w.getBoundingClientRect(),p=-r.top/(r.height-innerHeight),n=r.top>innerHeight*.5?-1:Math.min(3,Math.max(0,Math.floor(p*4.4)));
+for(var k=0;k<4;k++){L[k].classList.toggle("on",k<=n);C[k].classList.toggle("on",k<=n)}}
+addEventListener("scroll",function(){if(!t){t=true;requestAnimationFrame(run)}},{passive:true});addEventListener("resize",run);run()})()</script>
+</body></html>
