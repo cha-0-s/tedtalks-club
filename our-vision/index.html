@@ -73,6 +73,11 @@ h1,h2,h3{font-weight:700;text-wrap:balance}p{text-wrap:pretty}
 .core{position:absolute;left:50%;top:50%;width:280px;height:280px;margin:-140px 0 0 -140px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-size:29px;font-weight:700;letter-spacing:-.025em;line-height:1.1;padding:28px}
 .after{margin-top:clamp(40px,5vw,72px);font-size:20px;max-width:52ch}
 
+/* Promise */
+.yours{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:12px 40px;align-items:baseline;margin-top:clamp(56px,7vw,110px);padding-top:clamp(28px,3vw,44px);border-top:2px solid var(--red)}
+.yours h2{font-size:clamp(32px,4.4vw,66px);letter-spacing:-.04em;line-height:1.04}
+.yours p{font-size:20px;max-width:40ch}
+
 /* Real */
 .real dl{position:relative;margin-top:clamp(44px,5vw,80px);border-bottom:1px solid rgba(255,255,255,.3)}
 .real dl>div{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:10px 40px;align-items:baseline;border-top:1px solid rgba(255,255,255,.3);padding:clamp(30px,4.2vw,62px) 0}
@@ -94,7 +99,7 @@ footer{background:var(--ink);color:#b9b9c6;font-size:14px;padding:36px 0 44px}fo
  .way li b{font-size:clamp(38px,min(12.5vw,8.5vh),84px)}
  .way svg{right:-62vw;width:124vw;opacity:.4}
  .way{height:300vh}.map .grid{margin-top:96px}.map svg{width:88%}
- .say,.lines,.three,.map .grid,.real dl>div{grid-template-columns:minmax(0,1fr)}.three{gap:40px}
+ .yours,.say,.lines,.three,.map .grid,.real dl>div{grid-template-columns:minmax(0,1fr)}.three{gap:40px}
  .real dt,.real .go{font-size:min(10vw,48px)}
  .ring4{grid-template-columns:1fr}.core{order:-1;position:static;margin:0 0 28px;width:210px;height:210px;font-size:23px}
  .ring4 li,.ring4 li:nth-child(n){padding:22px 0;min-height:0;border:0;border-top:1px solid var(--line);display:block}
@@ -136,7 +141,8 @@ footer{background:var(--ink);color:#b9b9c6;font-size:14px;padding:36px 0 44px}fo
 <li><h3>Government</h3><p>Public organisations show how decisions are taken, and where a young voice can change one.</p></li>
 <li><h3>Non-profits</h3><p>They know what their communities need, and what it takes to keep going.</p></li>
 <li><h3>Funds</h3><p>They help the strongest ideas take their first step.</p></li></ul><div class="core">Young people with ideas</div></div>
-<p class="after">While we build the rest, we will bring them together, from Cyprus and from around the world.</p></div></section>
+<p class="after">While we build the rest, we will bring them together, from Cyprus and from around the world.</p>
+<div class="yours"><h2>Your idea stays yours</h2><p>We help you sharpen it. No partner, teacher or parent decides what you say.</p></div></div></section>
 
 <section class="sec dark real"><div class="wrap"><h2 class="big">Where ideas meet the world</h2>
 <dl id="real"><div><dt><span class="r">Real</span> projects</dt><dd>Young people try themselves in work that matters to someone.</dd></div>
